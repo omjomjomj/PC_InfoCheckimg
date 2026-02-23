@@ -1,0 +1,27 @@
+﻿OpenClaw 環境報告
+生成時間: 2026-02-23 21:07:02
+==========================================
+
+[系統資訊]
+  OS    : Microsoft Windows 10 專業版
+  Build : 19045
+  CPU   : AMD EPYC 7742 64-Core Processor                
+  RAM   : 256 GB
+
+[依賴狀態]
+  Git          : 已安裝
+  Node.js v22+ : 已安裝
+  WSL2+Ubuntu  : 已安裝
+  Docker       : 已安裝
+  ngrok        : 已安裝
+
+[統計]
+  錯誤數 : 0
+  警告數 : 1
+
+[下一步]
+  1. 確認 ~/.openclaw/.env 已填入所有 API 金鑰
+  2. 啟用 systemd 服務:
+     wsl -e bash -c "systemctl --user enable --now openclaw-gateway.service"
+  3. 啟動 The Hands:
+     wsl -e bash -c "cd ~/.openclaw/workspace/the-hands && docker compose up -d"
